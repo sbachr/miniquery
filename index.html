@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +8,28 @@
     <script src="./lib/miniquery.js"></script>
     <title>Mini Query</title>
 </head>
+
 <body>
-    
+
+    <div id="eyed">eyed</div><br><br>
+
+    <div class="klass">klass</div>
+    <div class="klass">klass1</div>
+    <div class="klass">klass2</div><br><br>
+
+    <a href="#hello">click me</a>
+
+
 </body>
+    <script>   
+        console.log(SweetSelector.select('#eyed'))
+        console.log(SweetSelector.select('.klass'))
+        console.log(SweetSelector.select('a'))
+
+        DOM.hide('.klass')
+        DOM.show('.klass')
+        DOM.addClass('.klass', 'shadi')
+        DOM.removeClass('.klass', 'shadi')
+    </script>
+
 </html>
