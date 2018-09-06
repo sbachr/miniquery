@@ -30,6 +30,22 @@
         DOM.show('.klass')
         DOM.addClass('.klass', 'shadi')
         DOM.removeClass('.klass', 'shadi')
+
+        EventDispatcher.on('.klass', 'click', function(){
+            console.log("awesom");
+        })
+        // EventDispatcher.triger('.klass', 'click')
+
+        AjaxWrapper.request({
+            url: 'someurl',
+            type : 'GET'
+        })
+        .done(data => {
+            console.log('success')
+        })
+        .fail(err => {
+            console.log('error');
+        })
     </script>
 
 </html>
